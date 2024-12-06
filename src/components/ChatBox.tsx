@@ -46,8 +46,8 @@ const ChatBox = () => {
   }, []);
 
   return (
-    <main className="flex flex-col bg-[#1c2c4c] text-[#4c768d] px-4 pt-28">
-      <div className="pb-20 ">
+    <main className="flex flex-col h-auto min-h-screen bg-[#1c2c4c] text-[#4c768d] px-4 pt-28">
+      <div className="pb-20 h-full">
         <div className="">
           {messages?.map((message) => (
             <Message key={message.id} message={message} />
